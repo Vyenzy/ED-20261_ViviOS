@@ -1,7 +1,12 @@
 #include <stdio.h>
 
-float imc(float peso, float altura)
+float imc(FILE *arquivo,float peso, float altura)
 {
+    if (peso <= 0 || altura <= 0) 
+    {
+        fprintf(arquivo, "Valores solicitados inválidos.");
+        fclose(arquivo); 
+    } 
     return peso / (altura * altura);
 }
 
@@ -15,14 +20,10 @@ int main ()
     }
     float peso, altura;
     printf("Insira o peso:");
-    scanf("%.2f", &peso);
+    scanf("%f", &peso);
     printf("Insira a altura:");
-    scanf("%.2f", &altura);
-    if (peso <= 0 || altura <= 0) 
-    {
-        fprintf(arquivo, "Valores solicitados inválidos.");
-    }
-    float imc_result = imc(peso, altura);
+    scanf("%f", &altura);
+    float imc_result = imc(arquivo, peso, altura);
     if (imc_result < 18.5)
     {
         fprintf (arquivo, "Abaixo do peso."); 
