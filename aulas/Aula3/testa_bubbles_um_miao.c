@@ -1,5 +1,3 @@
-// Apenas rodar quando testa bubbles.c não estiver presente a partir de 
-// gcc *.c -lm -o a.out
 // #include <stdio.h>
 // #include <stdlib.h>
 // #include <time.h>
