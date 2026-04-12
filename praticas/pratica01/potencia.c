@@ -1,28 +1,38 @@
 #include <stdio.h>
 
-    void calcula_potencia (float base, float exp) 
+float calcula_potencia(float base, int exp) 
+{
+    if (exp < 0) 
     {
-        if (exp<=0) 
-        {
-            printf("\n\tExpoente Não inteiro ou Menor que zero. Insira novamente");
-        }
-        else if (exp>0) 
-            {
-                int potencia_temp = 1; 
-                for (int i = 0; i<exp; i++) 
-                {
-                    potencia_temp = potencia_temp*base; 
-                }
-            printf("\n\tResultado: %d",potencia_temp);
-            }
-    }   
+        return -1.0f;
+    }
 
-    int main () 
+    float resultado = 1.0f;
+    for (int i = 0; i < exp; i++) 
     {
-    calcula_potencia(5,6);
-    calcula_potencia(6,7);
-    calcula_potencia(-2,1);
-    calcula_potencia(2,0);
-    calcula_potencia(10,3);
+        resultado = resultado * base;
+    }
+    return resultado;
+}
+
+int main() 
+{
+    float res;
+
+    res = calcula_potencia(5, 3);
+    printf("5^3 = %.1f => %i\n", res, res == 125.0f);
+
+    res = calcula_potencia(2, 0);
+    printf("2^0 = %.1f => %i\n", res, res == 1.0f);
+
+    res = calcula_potencia(10, 2);
+    printf("10^2 = %.1f => %i\n", res, res == 100.0f);
+
+    res = calcula_potencia(3, -5);
+    if (res == -1.0f) 
+    {
+        printf("3^-5 = Erro: O expoente não pode ser negativo! => 1\n");
+    }
+
     return 0;
-    } 
+}
