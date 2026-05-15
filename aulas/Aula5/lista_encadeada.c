@@ -84,7 +84,8 @@ void remover(ListaEncadeada *lista, int valor)
     No *anterior = no;    
     while (no->proximo != NULL) 
     {
-       no = no->proximo;
+       anterior = no;
+        no = no->proximo;
        if (no->dado == valor) 
        {
          anterior->proximo = no->proximo;
@@ -94,7 +95,7 @@ void remover(ListaEncadeada *lista, int valor)
     }
     
     // remove o ultimo
-    if (no->proximo == NULL) 
+    if (no->proximo == NULL && no->dado == valor) 
     {
         lista->ultimo = anterior;
     }
