@@ -17,7 +17,7 @@ Pilha *criar();
 int pilha_vazia(Pilha *pilha);
 No *pilha_topo(Pilha *pilha);
 void empilhar(Pilha *pilha, int valor);
-void desempilhar(Pilha *pilha, int valor);
+void desempilhar(Pilha *pilha);
 void destruir(Pilha *pilha);
 
 
