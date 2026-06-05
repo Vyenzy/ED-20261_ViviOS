@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "arvore_bst.h"
 
 No *criar (int valor)
@@ -57,4 +58,42 @@ No *buscar (No *no, int valor)
     }
 
     return buscar (no->direita, valor);
+}
+
+void pre_ordem (No *no)
+{
+    if (no == NULL)
+    {
+        return;
+    }
+
+    printf("[%i] ", no->dado);
+    pre_ordem (no->esquerda);
+    pre_ordem (no->direita);
+}
+
+void em_ordem(No *no)
+{
+    if (no == NULL)
+    {
+        return;
+    }
+
+    em_ordem(no->esquerda);
+    printf("[%i] ", no->dado);
+    em_ordem(no->direita);
+
+}
+
+void pos_ordem (No *no)
+{
+    if (no == NULL)
+    {
+        return;
+    }
+
+    pos_ordem (no->esquerda);
+    pos_ordem (no->direita);
+    printf ("[%i] ", no->dado);
+    
 }
