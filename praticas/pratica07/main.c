@@ -7,7 +7,7 @@ int main()
     int valor_topo;
     Pilha minha_pilha = pilha_criar();
 
-    printf("Testes do TDA Pilha\n\n");
+    printf("Testes do Pilha\n\n");
 
     printf("A pilha está vazia? %s\n\n", pilha_esta_vazia(minha_pilha) ? "Sim" : "Não");
 
