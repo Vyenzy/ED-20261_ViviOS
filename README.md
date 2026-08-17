@@ -1,47 +1,35 @@
-# 🎓 ED: Estrutura de Dados
-Repositório destinado às aulas teóricas e às atividades práticas da disciplina.
+# 🎓 Estrutura de Dados | Implementações em C
 
-## 🛠️ Ambiente de Desenvolvimento
-Para acompanhar a disciplina, você precisará das seguintes ferramentas:
-| Ferramenta | O que é? | Recomendação |
-| :--- | :--- | :--- |
-| Editor de código | Ambiente onde você escreverá seu código. | [Visual Studio Code](https://code.visualstudio.com/) | 
-| Compilador | Responsável por transformar o código em programa. | **Windows:** [w64devkit](https://github.com/skeeto/w64devkit/releases) <br> **Linux/macOS:** gcc/clang (já incluso) |
-| Versionador | Controla e registra o histórico de alterações do código. | [Git](https://git-scm.com/) |
+![Linguagem](https://img.shields.io/badge/Linguagem-C-blue)
+![Status](https://img.shields.io/badge/Status-Concluído-brightgreen)
 
-## 📂 Estrutura de Pastas
-Este repositório está organizado da seguinte forma:
-- **aulas/**: Contém os códigos utilizados nas aulas teóricas.
-- **praticas/**: Contém os códigos das atividades práticas.
+Repositório portfólio contendo minhas implementações desenvolvidas durante as atividades práticas da disciplina de Estrutura de Dados (Engenharia de Computação - IESB). 
 
-## 🚀 Fluxo de Trabalho Acadêmico
-As atividades seguem o fluxo de trabalho baseado no modelo [GitFlow](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow).
+O foco deste repositório é demonstrar a aplicação de conceitos de alocação de memória, manipulação de ponteiros, modularização e a construção do zero de estruturas de dados fundamentais.
 
-### 1. Configuração Inicial (realizar apenas uma vez)
-Execute estes passos para preparar seu ambiente:
-1. **Criar Repositório**: Clique no botão `Use this template`, no topo da página, para criar uma cópia deste repositório na sua conta GitHub.
-2. **Clonar Repositório**: Faça o clone do seu repositorio para a sua máquina local:
-```bash
-git clone https://github.com/SEU_USUARIO/ed-SEMESTRE.git
-```
-3. **Configurar Identificação**: Certifique-se que seu **nome** e **email** estejam configurados no Git:
-```bash
-git config --global user.name "Seu Nome"
-git config --global user.email "seu@email.com"
-``` 
+## 🧠 Progressão de Aprendizado e Práticas
 
-### 2. Entrega de Atividades (repetir para cada prática)
-Para cada nova atividade, siga o fluxo abaixo:
-1. **Crie uma Issue**: Acesse a aba `Issues` no GitHub e clique no botão `New issue` para criar a prática usando o template correspondente.
-2. **Crie uma branch**: Acesse a branch `develop` e crie uma nova branch.
-3. **Desenvolva e teste**: Implemente os arquivos na pasta da prática e realize os testes.
-4. **Envie para o GitHub**: Salve suas alterações e envie para o seu repositório.
-5. **Solicite a revisão**: Acesse o seu repositório no GitHub e crie um `Pull Request` direcionando para a sua branch `develop`. 
+Abaixo estão os tópicos abordados em cada atividade prática, refletindo a evolução dos conceitos da linguagem C até estruturas de dados complexas:
 
-> ⚠️ **Atenção!**<br>
-> Se o check ✅ não aparecer no `Pull Request`, há erros de compilação ou sintaxe que precisam ser corrigidos.
+*   **`pratica01/` - Fundamentos e Lógica:** Lógica de programação, operações matemáticas elementares (IMC, média, potência).
+*   **`pratica02/` - Arrays e Recursão:** Busca sequencial, manipulação de matrizes e funções recursivas (fatorial).
+*   **`pratica03/` - Tipos Abstratos de Dados (TAD):** Modularização de código separando interfaces (`.h`) e implementações (`.c`) simulando um sistema de contas.
+*   **`pratica04/` e `pratica05/` - Algoritmos de Ordenação:** Implementação de algoritmos clássicos de ordenação (ex: Selection Sort) e organização de dados.
+*   **`pratica06/` - Listas Lineares:** Estruturação e manipulação de listas.
+*   **`pratica07/` - Pilhas (Stacks):** Implementação do conceito LIFO (*Last In, First Out*).
+*   **`pratica08/` - Filas (Queues):** Implementação do conceito FIFO (*First In, First Out*).
+*   **`pratica09/` - Árvores Binárias:** Estruturas não-lineares, nós e navegação hierárquica.
+*   **`pratica10/` - Tabelas Hash:** Armazenamento chave-valor, funções de espalhamento e tratamento de colisões.
 
-### 3. Feedback e Avaliação
-Envie o link do seu `Pull Request` pela plataforma de ensino. A avaliação do código será feita usando o sistema de **Code Review**:
-- **Approve (Aprovado)**: Seu código cumpre os requisitos e o "Check" está verde.
-- **Request Changes (Solicitação de Ajustes)**: Foram encontrados pontos de melhoria ou erros. Você deve corrigir na sua máquina, fazer o push e avisar no comentário do PR para uma nova revisão.
+## 🚀 Metodologia de Trabalho (GitFlow & Code Review)
+
+Um dos diferenciais deste repositório é que todo o desenvolvimento seguiu práticas reais da indústria de software:
+*   **GitFlow:** Uso estrito de ramificações (`main`, `develop`, `feature-branches` para cada prática).
+*   **Gestão de Tarefas:** Cada nova estrutura foi guiada por meio da criação de *Issues* no GitHub.
+*   **Pull Requests (PRs):** O código só era integrado à branch principal após a abertura de um PR, validação automática de compilação e Code Review.
+
+## 🛠️ Stack Tecnológica
+
+*   **Linguagem:** C (Padrão ANSI)
+*   **Ambiente:** GCC / w64devkit
+*   **Versionamento:** Git & GitHub
